@@ -2,6 +2,9 @@
 module.exports = {
   darkMode: ["class"],
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  safelist: [
+  'px-[5%]',
+],
   theme: {
     extend: {
       animation: {
