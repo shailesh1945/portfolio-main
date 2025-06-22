@@ -2,9 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  safelist: [
-  'px-[5%]',
-],
+ safelist: [
+    'px-4', 'px-6', 'px-8', // Add all padding variants you use
+    'pl-4', 'pr-4', // Left/right padding
+    { pattern: /^p[xylr]?-\d+/ }, // Regex to allow all padding classes
+  ],
   theme: {
     extend: {
       animation: {
